@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.jw_server.common.security.config.SecurityConfig,\
+  com.jw_server.common.security.config.JwtAuthenticationTokenFilter,\
+  com.jw_server.common.security.core.handler.AccessDeniedHandlerImpl,\
+  com.jw_server.common.security.core.handler.AuthenticationEntryPointImpl,\
+  com.jw_server.common.security.core.utils.JwtUtils

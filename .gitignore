@@ -1,0 +1,22 @@
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+
+# Editor directories and files
+.idea
+target
+.vscode
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+package-lock.json
