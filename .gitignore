@@ -18,5 +18,5 @@ target
 *.sln
 *.sw?
 
-
+application.yml
 package-lock.json
