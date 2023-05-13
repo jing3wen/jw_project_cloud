@@ -113,7 +113,8 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         if (ObjectUtil.isNotEmpty(findSameEmailUser)){
             throw new ServiceException(ResponseCode.CODE_600,"该邮箱已经注册");
         }
-        //对密码进行加密
+        registerUserDTO.setPassword(password);
+        //对存入到数据库密码进行加密
         registerUserDTO.setPassword(bCryptPasswordEncoder.encode(registerUserDTO.getPassword()));
         SysUser addUser  = new SysUser();
         BeanUtil.copyProperties(registerUserDTO, addUser);
